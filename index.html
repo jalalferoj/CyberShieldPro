@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield Pro - Advanced Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="cyber-loader">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+            </div>
+            <div class="loader-text">Initializing Security Protocols...</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="logo-text">CyberShield Pro</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active" data-page="home">
+                        <span>Home</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="services.html" class="nav-link" data-page="services">
+                        <span>Services</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="about.html" class="nav-link" data-page="about">
+                        <span>About</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="contact.html" class="nav-link" data-page="contact">
+                        <span>Contact</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Get Secured</a>
+                </div>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="cyber-grid" id="cyberGrid"></div>
+                <div class="floating-particles" id="floatingParticles"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">ADVANCED CYBERSECURITY</span>
+                        <span class="title-line highlight">SOLUTIONS FOR THE</span>
+                        <span class="title-line cyber-text">DIGITAL AGE</span>
+                    </h1>
+                    <p class="hero-subtitle">Protect your digital assets with cutting-edge penetration testing, vulnerability assessments, and comprehensive GRC services. Your security is our mission.</p>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Explore Services</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-phone"></i>
+                        <span>Get Consultation</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Clients Protected</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Threat Detection</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Security Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-gradient">Our Core Services</span>
+                    </h2>
+                    <p class="section-subtitle">Comprehensive cybersecurity solutions tailored to your needs</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Penetration Testing</h3>
+                            <p>Comprehensive security assessments that simulate real-world attacks to identify vulnerabilities before malicious actors do.</p>
+                            <ul class="service-features">
+                                <li>Network Penetration Testing</li>
+                                <li>Web Application Testing</li>
+                                <li>Mobile App Security</li>
+                                <li>Social Engineering Tests</li>
+                            </ul>
+                            <a href="services.html#pentesting" class="service-link">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Vulnerability Assessment</h3>
+                            <p>Systematic evaluation of security weaknesses in your systems, applications, and infrastructure.</p>
+                            <ul class="service-features">
+                                <li>Automated Vulnerability Scanning</li>
+                                <li>Manual Security Testing</li>
+                                <li>Risk Prioritization</li>
+                                <li>Remediation Guidance</li>
+                            </ul>
+                            <a href="services.html#vulnerability" class="service-link">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>GRC Services</h3>
+                            <p>Governance, Risk, and Compliance solutions to ensure your organization meets regulatory requirements and industry standards.</p>
+                            <ul class="service-features">
+                                <li>Compliance Audits</li>
+                                <li>Risk Management</li>
+                                <li>Policy Development</li>
+                                <li>Security Frameworks</li>
+                            </ul>
+                            <a href="services.html#grc" class="service-link">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="features-content">
+                    <div class="features-text">
+                        <h2 class="section-title">Why Choose CyberShield Pro?</h2>
+                        <p class="section-subtitle">Advanced cybersecurity expertise with cutting-edge technology</p>
+                        
+                        <div class="features-list">
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Certified Experts</h4>
+                                    <p>Our team holds industry-leading certifications including CISSP, CEH, OSCP, and more.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>24/7 Monitoring</h4>
+                                    <p>Round-the-clock security monitoring and incident response capabilities.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Advanced Analytics</h4>
+                                    <p>AI-powered threat detection and predictive security analytics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="features-visual">
+                        <div class="cyber-dashboard" data-aos="fade-left">
+                            <div class="dashboard-header">
+                                <h4>Security Dashboard</h4>
+                                <div class="status-indicator active">SECURE</div>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="metric-row">
+                                    <span>Threats Blocked</span>
+                                    <span class="metric-value">1,247</span>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Vulnerabilities Fixed</span>
+                                    <span class="metric-value">89</span>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Security Score</span>
+                                    <span class="metric-value">98%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Secure Your Digital Future?</h2>
+                    <p class="cta-subtitle">Get a comprehensive security assessment and protect your organization from cyber threats.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Start Free Assessment</span>
+                        </a>
+                        <a href="tel:+1234567890" class="btn btn-outline btn-large">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="logo-text">CyberShield Pro</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    <p class="footer-description">Leading cybersecurity solutions provider, protecting organizations from digital threats with advanced technology and expert knowledge.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#pentesting">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#grc">GRC Services</a></li>
+                        <li><a href="services.html#consulting">Security Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Cyber Street<br>Sydney, NSW 2000</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@cybershieldpro.com.au</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+61 2 1234 5678</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2024 CyberShield Pro. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

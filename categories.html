@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - HomeItems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo">
+                            <span class="logo-text">HomeItems</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="about.html" class="nav-link" data-page="about">
+                        <span>About Us</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="categories.html" class="nav-link active" data-page="categories">
+                        <span>Categories</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="featured.html" class="nav-link" data-page="featured">
+                        <span>Featured</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="news.html" class="nav-link" data-page="news">
+                        <span>News</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="contact.html" class="nav-link" data-page="contact">
+                        <span>Contact</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                </div>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">
+                        <span class="title-gradient">Browse Categories</span>
+                    </h1>
+                    <p class="page-subtitle">Discover quality items organized by category</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <div class="categories-grid">
+                    <div class="category-card" data-aos="fade-up" id="furniture">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                            <h2>Furniture</h2>
+                            <p>Quality pre-owned furniture for every room</p>
+                        </div>
+                        <div class="category-items">
+                            <div class="item-card">
+                                <div class="item-image">🛋️</div>
+                                <div class="item-info">
+                                    <h4>Vintage Leather Sofa</h4>
+                                    <p class="item-price">$299</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">🪑</div>
+                                <div class="item-info">
+                                    <h4>Dining Table Set</h4>
+                                    <p class="item-price">$199</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">📚</div>
+                                <div class="item-info">
+                                    <h4>Bookshelf</h4>
+                                    <p class="item-price">$75</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="category-link">View All Furniture <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="100" id="electronics">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <h2>Electronics</h2>
+                            <p>Tested and working electronics at great prices</p>
+                        </div>
+                        <div class="category-items">
+                            <div class="item-card">
+                                <div class="item-image">📺</div>
+                                <div class="item-info">
+                                    <h4>Smart TV 55"</h4>
+                                    <p class="item-price">$450</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">🎮</div>
+                                <div class="item-info">
+                                    <h4>Gaming Console</h4>
+                                    <p class="item-price">$320</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">🔊</div>
+                                <div class="item-info">
+                                    <h4>Bluetooth Speaker</h4>
+                                    <p class="item-price">$45</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="category-link">View All Electronics <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="200" id="kitchen">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h2>Kitchen Items</h2>
+                            <p>Everything you need for your kitchen</p>
+                        </div>
+                        <div class="category-items">
+                            <div class="item-card">
+                                <div class="item-image">🥄</div>
+                                <div class="item-info">
+                                    <h4>Kitchen Mixer</h4>
+                                    <p class="item-price">$89</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">☕</div>
+                                <div class="item-info">
+                                    <h4>Coffee Machine</h4>
+                                    <p class="item-price">$125</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">🍳</div>
+                                <div class="item-info">
+                                    <h4>Non-stick Pan Set</h4>
+                                    <p class="item-price">$65</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="category-link">View All Kitchen Items <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="300" id="decor">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h2>Home Decor</h2>
+                            <p>Beautiful pieces to decorate your space</p>
+                        </div>
+                        <div class="category-items">
+                            <div class="item-card">
+                                <div class="item-image">🖼️</div>
+                                <div class="item-info">
+                                    <h4>Wall Art Collection</h4>
+                                    <p class="item-price">$35</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">🕯️</div>
+                                <div class="item-info">
+                                    <h4>Decorative Candles</h4>
+                                    <p class="item-price">$15</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-image">🪴</div>
+                                <div class="item-info">
+                                    <h4>Plant Pots</h4>
+                                    <p class="item-price">$25</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="category-link">View All Decor <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <span class="logo-text">HomeItems</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    <p class="footer-description">Your trusted marketplace for quality pre-owned household items with cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="sell.html">Sell Items</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="categories.html#furniture">Furniture</a></li>
+                        <li><a href="categories.html#electronics">Electronics</a></li>
+                        <li><a href="categories.html#kitchen">Kitchen</a></li>
+                        <li><a href="categories.html#decor">Home Decor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Market Street<br>Sydney, NSW 2000</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@homeitems.com.au</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(02) 1234 5678</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">&copy; 2024 HomeItems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .categories-section {
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--spacing-2xl);
+        }
+
+        .category-card {
+            background: var(--surface-color);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .category-header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-lg);
+            font-size: var(--font-size-2xl);
+            color: var(--text-primary);
+        }
+
+        .category-header h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+
+        .category-header p {
+            color: var(--text-secondary);
+        }
+
+        .category-items {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .item-card {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--surface-light);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-normal);
+        }
+
+        .item-card:hover {
+            border-color: var(--primary-color);
+            transform: translateX(5px);
+        }
+
+        .item-image {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            background: var(--gradient-surface);
+            border-radius: var(--radius-md);
+        }
+
+        .item-info h4 {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-primary);
+        }
+
+        .item-price {
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .category-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-normal);
+        }
+
+        .category-link:hover {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

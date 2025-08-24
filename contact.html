@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CyberShield Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="cyber-loader">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+            </div>
+            <div class="loader-text">Loading Contact...</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="logo-text">CyberShield Pro</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link" data-page="home">
+                        <span>Home</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="services.html" class="nav-link" data-page="services">
+                        <span>Services</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="about.html" class="nav-link" data-page="about">
+                        <span>About</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                    <a href="contact.html" class="nav-link active" data-page="contact">
+                        <span>Contact</span>
+                        <div class="nav-link-glow"></div>
+                    </a>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Get Secured</a>
+                </div>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">
+                        <span class="title-gradient">Contact Us</span>
+                    </h1>
+                    <p class="page-subtitle">Ready to secure your organization? Get in touch with our cybersecurity experts</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-header">
+                            <h2>Get In Touch</h2>
+                            <p>Our cybersecurity experts are ready to help protect your organization. Contact us for a free consultation and security assessment.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method" data-aos="fade-right">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Emergency Hotline</h4>
+                                    <p>+61 2 1234 5678</p>
+                                    <span class="method-status">24/7 Incident Response</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method" data-aos="fade-right" data-aos-delay="100">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope-open"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Email Support</h4>
+                                    <p>info@cybershieldpro.com.au</p>
+                                    <span class="method-status">Response within 2 hours</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method" data-aos="fade-right" data-aos-delay="200">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Office Location</h4>
+                                    <p>123 Cyber Street<br>Sydney, NSW 2000</p>
+                                    <span class="method-status">Mon-Fri 9AM-6PM</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method" data-aos="fade-right" data-aos-delay="300">
+                                <div class="method-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Security Operations</h4>
+                                    <p>24/7 Monitoring & Response</p>
+                                    <button class="emergency-btn" onclick="showEmergencyContact()">Emergency Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-header">
+                                <h3>Request a Consultation</h3>
+                                <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <div class="input-glow"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="input-glow"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                                <div class="input-glow"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="input-glow"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Interest *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="penetration-testing">Penetration Testing</option>
+                                    <option value="vulnerability-assessment">Vulnerability Assessment</option>
+                                    <option value="grc-services">GRC Services</option>
+                                    <option value="security-consulting">Security Consulting</option>
+                                    <option value="incident-response">Incident Response</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="input-glow"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="urgency">Urgency Level</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="low">Low - General Inquiry</option>
+                                    <option value="medium">Medium - Within a week</option>
+                                    <option value="high">High - Within 24 hours</option>
+                                    <option value="critical">Critical - Immediate response needed</option>
+                                </select>
+                                <div class="input-glow"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your cybersecurity needs..."></textarea>
+                                <div class="input-glow"></div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our cybersecurity newsletter
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="logo-text">CyberShield Pro</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    <p class="footer-description">Leading cybersecurity solutions provider, protecting organizations from digital threats with advanced technology and expert knowledge.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#pentesting">Penetration Testing</a></li>
+                        <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                        <li><a href="services.html#grc">GRC Services</a></li>
+                        <li><a href="services.html#consulting">Security Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Cyber Street<br>Sydney, NSW 2000</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@cybershieldpro.com.au</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+61 2 1234 5678</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2024 CyberShield Pro. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
